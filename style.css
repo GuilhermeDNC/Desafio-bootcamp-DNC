@@ -30,9 +30,7 @@ body{
     color: #FFF;
     font-family: var(--fonte-padrão);
     font-size: 25px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     text-decoration: none;
 }
 
@@ -163,6 +161,154 @@ input[type="submit"]{
     line-height: normal;
     margin-top: 90px;
     cursor: pointer;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    background-color: var(--azul-dnc);
     
+
+}
+
+footer .linha1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+footer ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+
+}
+
+footer h5{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: var(--fonte-padrão);
+    background-color: var(--preto-dnc);
+    border-radius: 10px;
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 5px;
+
+}
+
+footer ul li{
+    text-align: center;
+    color: white;
+    font-weight: 550;
+    font-size: 20px;
+    font-family: var(--fonte-padrão);
+
+    margin: 20px 0 20px 0;
+}
+
+footer ul li a:hover{
+    color: var(--cinza-hover);
+}
+
+
+footer ul li a{
+    color: white;
+    text-decoration: none;
+
+}
+
+footer .endereço{
+    font-weight: 550;
+    font-size: 20px;
+    font-family: var(--fonte-padrão);
+    color: white;
+    text-align: center;
+    width: 28%;
+}
+
+footer .linha2{
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+
+
+}
+
+footer .linha2 a{
+    font-family: var(--fonte-padrão);
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer .linha2 a:first-child{
+    border-right: 3.5px solid white;
+}
+
+footer .linha2 a:hover{
+    color: var(--cinza-hover);
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* MENU */
+
+    #principal {
+        height: auto;
+        flex-direction: column;
+    }
+
+    #menuSuperior{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    #menuSuperior a{
+        display: flex;
+        height: 50px;
+        align-items: center;
+    }
+
+    #principal button{
+        width: 100%;
+        margin: 0;
+    }
+
+    /* SEÇÃO */
+
+    section h1{
+        font-size: 38px;
+    }
+    section h2{
+        font-size: 28px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    form{
+        width: 95%;
+        font-size: 20px;
+    }
+
+    .checkbox-itens label{
+        font-size: 16px;
+    }
+
+
+
 
 }
